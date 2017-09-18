@@ -28,7 +28,8 @@ export class PagSeguroService {
   }
 
   public setOptions(options: PagSeguroOptions) {
-    this.options = Object.assign(PagSeguroDefaultOptions, options);
+    // this.options = Object.assign(PagSeguroDefaultOptions, options);
+    Object.assign(this.options, options);
   }
 
   public getOptions(): PagSeguroOptions {
